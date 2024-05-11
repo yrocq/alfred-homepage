@@ -1,0 +1,6 @@
+target/
+.DS_Store
+prefs.plist
+homepage-workflow.lipo
+workflow/source/homepage
+workflow/package/

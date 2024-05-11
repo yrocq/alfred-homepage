@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>net.rocq.alfredapp.homepage</string>
+	<key>connections</key>
+	<dict>
+		<key>721ED97B-8A2C-44F9-8003-00FC7629EE3D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C4099B99-E833-46A8-AAD4-F313AED247E9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Yann Rocq</string>
+	<key>description</key>
+	<string>Get links from a homage dashboard instance</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Homepage links</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>C4099B99-E833-46A8-AAD4-F313AED247E9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>h</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./homepage $HOMEPAGE_ROOT_URL
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>721ED97B-8A2C-44F9-8003-00FC7629EE3D</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># Alfred Homepage workflow
+
+![Screenshot](./screenshot.png)
+
+An [Alfred](https://www.alfredapp.com) workflow to open bookmarks and services links from a [Homepage](https://gethomepage.dev) Instance.
+
+Yes, there is a [downloadable release]().
+
+## Usage
+
+- Open workflow in Alfred
+- Provide your Homepage instance URL in configuration dialog
+- Use **_h_** keyword + space + optional filter string
+- Preview the URL by pressing cmd key on an entry
+- Press Enter to open the URL in your browser</string>
+	<key>uidata</key>
+	<dict>
+		<key>721ED97B-8A2C-44F9-8003-00FC7629EE3D</key>
+		<dict>
+			<key>xpos</key>
+			<real>220</real>
+			<key>ypos</key>
+			<real>200</real>
+		</dict>
+		<key>C4099B99-E833-46A8-AAD4-F313AED247E9</key>
+		<dict>
+			<key>xpos</key>
+			<real>515</real>
+			<key>ypos</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string>https://homepage.example.com</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Url used to acces Homepage dashboard</string>
+			<key>label</key>
+			<string>Homepage root url</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>HOMEPAGE_ROOT_URL</string>
+		</dict>
+	</array>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.1.0</string>
+	<key>webaddress</key>
+	<string>http://metsledanslecode.com/</string>
+</dict>
+</plist>
