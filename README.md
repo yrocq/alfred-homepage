@@ -4,7 +4,7 @@
 
 An [Alfred](https://www.alfredapp.com) workflow to open bookmarks and services links from a [Homepage](https://gethomepage.dev) Instance.
 
-Yes, there is a [downloadable release]().
+Yes, there is a [downloadable release](https://github.com/yrocq/alfred-homepage/releases).
 
 ## Usage
 
